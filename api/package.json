@@ -10,7 +10,8 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "test:auth": "tsx test-auth.ts",
-    "test:posts": "tsx test-posts.ts"
+    "test:posts": "tsx test-posts.ts",
+    "test:stage6": "tsx test-stage6-check.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
