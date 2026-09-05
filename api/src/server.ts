@@ -43,8 +43,10 @@ app.use((err: Error, req: Request, res: Response, _next: NextFunction) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 DIATINF X API rodando na porta ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 DIATINF X API rodando na porta ${PORT}`);
+  });
+}
 
 export { app };
